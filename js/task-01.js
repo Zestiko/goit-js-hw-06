@@ -1,23 +1,23 @@
-const animalsTitle = document.querySelector('.animals__title');
-const animalsItem = document.querySelectorAll('.animals__items');
+const animalsTitleRef = document.querySelector('.animals__title');
+const animalsItemRef = document.querySelectorAll('.animals__items');
 
-const productTitle = document.querySelector('.product__title');
-const productItem = document.querySelectorAll('.product__item');
+const productTitleRef = document.querySelector('.product__title');
+const productItemRef = document.querySelectorAll('.product__item');
 
-const technologiesTitle = document.querySelector('.technologies__title');
-const technologiesItme = document.querySelectorAll('.technologies__item');
+const technologiesTitleRef = document.querySelector('.technologies__title');
+const technologiesItmeRef = document.querySelectorAll('.technologies__item');
 
 const catagoriesArray = [];
-catagoriesArray.push(animalsTitle, productTitle, technologiesTitle);
+catagoriesArray.push(animalsTitleRef, productTitleRef, technologiesTitleRef);
 // console.log(catagoriesArray)
 
 console.log(`Number of categories: ${catagoriesArray.length}`);
 
-console.log(`Categort : ${animalsTitle.textContent}`)
-console.log(`Elements: ${animalsItem.length}`)
+console.log(`Categort : ${animalsTitleRef.textContent}`)
+console.log(`Elements: ${animalsItemRef.length}`)
 
-console.log(`Categort : ${productTitle.textContent}`)
-console.log(`Elements: ${productItem.length}`)
+console.log(`Categort : ${productTitleRef.textContent}`)
+console.log(`Elements: ${productItemRef.length}`)
 
-console.log(`Categort : ${technologiesTitle.textContent}`)
-console.log(`Elements: ${technologiesItme.length}`)
+console.log(`Categort : ${technologiesTitleRef.textContent}`)
+console.log(`Elements: ${technologiesItmeRef.length}`)
