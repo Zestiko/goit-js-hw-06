@@ -3,4 +3,11 @@ const refs = {
     text: document.querySelector('#text'),
 };
 
-console.log(refs.text)
+// refs.text.style.fontSize = '25px';
+console.log(refs.text.style.fontSize)
+function changeFontSize(event) {
+    console.log(refs.input.value)
+    refs.text.style.fontSize = `${event.currentTarget.value}px`
+}
+
+refs.input.addEventListener(`change`,changeFontSize );
