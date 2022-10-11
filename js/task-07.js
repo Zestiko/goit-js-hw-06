@@ -10,4 +10,4 @@ function changeFontSize(event) {
     refs.text.style.fontSize = `${event.currentTarget.value}px`
 }
 
-refs.input.addEventListener(`change`,changeFontSize );
+refs.input.addEventListener(`input`,changeFontSize );

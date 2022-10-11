@@ -14,8 +14,9 @@ refs.button.addEventListener('click',changeBgcolor);
 
 
 function changeBgcolor(event) {
-  refs.span.textContent = getRandomHexColor();
-  refs.body.style.backgroundColor = `${getRandomHexColor()}`;
+  let randomHex = getRandomHexColor();
+  refs.span.textContent = randomHex;
+  refs.body.style.backgroundColor = `${randomHex}`;
 
 }
 

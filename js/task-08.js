@@ -15,9 +15,11 @@ function onFormSubmit(event) {
       formData.forEach((value, name) => {
         console.log(name);
         console.log(value);
+        
     });
     event.currentTarget.elements.email.value = "";
-    event.currentTarget.elements.password.value = "";
+   event.currentTarget.elements.password.value = "";
+   console.log(formData);
   }
     
     // const formData = new FormData(event.currentTarget);
