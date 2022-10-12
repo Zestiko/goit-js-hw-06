@@ -18,7 +18,7 @@ function onFormSubmit(event) {
         
     });
     event.currentTarget.elements.email.value = "";
-   event.currentTarget.elements.password.value = "";
+    event.currentTarget.elements.password.value = "";
    console.log(formData);
   }
     
@@ -31,4 +31,5 @@ function onFormSubmit(event) {
     // event.currentTarget.elements.password.value = "";
 
     // console.log(formData);
+    
 }

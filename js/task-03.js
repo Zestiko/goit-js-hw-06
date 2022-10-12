@@ -27,23 +27,34 @@ const ulRef = document.querySelector('.gallery');
 //   return liRef;
 // });
 
-function makeImagesRefs(image) {
-  return image.map(({url, alt}) => {
-  const liRef = document.createElement('li')
-  const imagesRef = document.createElement('img');
-  imagesRef.src = url;
-  imagesRef.alt = alt;
-  imagesRef.width = 320;
-  imagesRef.height = 180;
-  liRef.appendChild(imagesRef);
-  return liRef;
+// function makeImagesRefs(image) {
+//   return image.map(({url, alt}) => {
+//   const liRef = document.createElement('li')
+//   const imagesRef = document.createElement('img');
+//   imagesRef.src = url;
+//   imagesRef.alt = alt;
+//   imagesRef.width = 320;
+//   imagesRef.height = 180;
+//   liRef.appendChild(imagesRef);
+//   return liRef;
   
+// });
+// };
+
+// const elements = makeImagesRefs(images);
+
+// console.log(elements);
+
+// ulRef.append(...elements);
+const list = document.querySelector('.gallery');
+let markup = '';
+images.forEach(img => {
+    markup = images
+        .map(
+            img =>
+                `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}" width = "320"></li>`
+        )
+        .join('');
 });
-};
-
-const elements = makeImagesRefs(images);
-
-console.log(elements);
-
-ulRef.append(...elements);
+list.insertAdjacentHTML('afterbegin', markup);
 
